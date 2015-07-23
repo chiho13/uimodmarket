@@ -14,37 +14,34 @@ $(document).ready(function(){
 $('#exterior-jdm').live('click', function (){
           swiper2.removeAllSlides();
         swiper2.appendSlide([
-        '<div class="swiper-slide auto-height"><img src="img/Exterior/jdm/frontsplitter.png"></div>',
+        '<div class="swiper-slide auto-height" id="frontsplitter"><img src="img/Exterior/jdm/frontsplitter.png"></div>',
         '<div class="swiper-slide auto-height"><img src="img/Exterior/jdm/typea.png"></div>',
 ]);
 });
       // return false
 
        
-$("#vfs2").live('click', function(){
+$("#frontsplitter").live('click', function(){
+
+
+          // $.getScript("js/jquery.wheelcolorpicker.js", function (){
+          //   $('#color-inline2').wheelColorPicker({ sliders: "whsvp", preview: true, format: "css" });
+          // }
+         
+  
       $(".tab-pane").removeClass("active");
       $(".btn-colortab").removeClass("active");
 
       $("#tab2primary").addClass("active in ");
       $(".btn-part").addClass("active");
 
-      $('#tab2primary').load("Manufacturer/carparts/vfs2.html");
-    });
-
-$("#cv3part").live('click', function(){
-      $(".tab-pane").removeClass("active");
-      $(".btn-colortab").removeClass("active");
-
-      $("#tab2primary").addClass("active in ");
-      $(".btn-part").addClass("active");
-
-      $('#tab2primary').load("Manufacturer/carparts/cv3.html");
-    });
-
+      // $('#tab2primary').load("Manufacturer/carparts/jdm.html");
+      // $('#tab2primary').load("js/jquery.wheelcolorpicker.js");
 
 
 });
 
+});
 
 
 
