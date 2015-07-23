@@ -9,10 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Modmarket - 3D Tuning Platform</title>
+    <title>Simulator | 3D Platform</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
        <!--   <link href="css/bootstrap-select.min.css" rel="stylesheet"> -->
 
@@ -43,6 +42,7 @@
     <link rel="stylesheet" href="css/styleselect.css">
     <link href="css/platform.css" rel="stylesheet">
     <link href="css/select-color.css" rel="stylesheet">
+     <link href="css/manufacturer/manufacturer.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/latest/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -87,7 +87,7 @@
     <ul class="sidebar-nav">
            <!--  <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a> -->
         <li class="sidebar-brand">
-            <p> Welcome Rachel</p>
+            <p> Vossen Wheels</p>
         </li>
         <hr>
             
@@ -113,6 +113,8 @@
 
 <div class= "col-xs-3 ">
     <div class="sidebar-container">
+
+
          <div class="card  max-card select-car-card card-container">
             <div class="search-parts panel-heading">
                 <h4 class="panel-title">
@@ -120,7 +122,7 @@
                 </h4>
             </div>
 
-            <div id="car-wrapper">
+             <div id="car-wrapper">
                 <fieldset>
                     <select id="makeSelectionBox" class="selectpicker" style="width:100%" id="first-choice">
                         <option value="" disabled selected>Car Make</option>
@@ -236,39 +238,69 @@
         <div class="row">
             <div class="accordion panel-group" id="accordion">
                  <div class=" panel panel-default">
-                    <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="accordion-toggle panel-heading">
-                        <h4 class="panel-title">
-                            Wheels 
+                    <div  class=" panel-heading">
+                        <h4 class="panel-title" >
+                            <img src="img/Wheels/vossen_wheels.png" style="height:20px;">
                         </h4>
                 <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
             
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in components-panel">
+                    
                         <div class="panel-body wheels-body ">
-                            <div id="owl-wheels" class="owl-carousel owl-theme wheel-logos">
-                                <!-- Slides -->
+                         <!--    <div id="owl-wheels" class="owl-carousel owl-theme wheel-logos">
+                               
                                   <div class="item" id="vossenseries">
                                     <img src="img/Wheels/vossen_wheels.png" style="margin-top:10px;" ></div>
                                   <div class="item" id="enkeiseries"> <img src="img/Wheels/enkei_wheels.png" ></div>
                                   <div class="item" id="rayseries"><img src="img/Wheels/Rays_Engineering.png" ></div>
                                   <div class="item" id="workseries"> <img src="img/Wheels/work_logo.png" style="margin-top:10px;"></div>
-                                                      
-                             
-                                
-                            <!-- If we need scrollbar -->
-                            
-                            </div>
+                                    
+                            </div> -->
+
+                            <table class="table fixed_headers shadow seriewheels">
+                                <thead class="headershadow">
+        
+          
+                                <th>Series</th>
+                        
+                                </thead>
+                                <tbody>
+                      
+                                    <tr>
+                
+                                        <td id="vf">VF</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td id="cv3">CV</td>
+                          
+                                    </tr>
+                        
+                                    <tr>
+                                        <td>VLE-1</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>Vossen Forged</td>
+                          
+                                    </tr>
+                                    <tr>
+                                        <td>Retired Wheels</td>
+                      
+                                    </tr>
+                                </tbody>
+                            </table>
+
 
                     
                         </div>
-                    </div>
+                    
                 </div>
-                <div class="panel panel-default">
+                <!-- <div class="panel panel-default">
                     <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class=" collapsed accordion-toggle panel-heading">
                         <h4 class="panel-title">
                          Suspension
                         </h4>
-            <!--     <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse components-panel">
                         <div class="panel-body">
@@ -288,7 +320,6 @@
                         <h4 class="panel-title">
                      Exhaust
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
                     </div>
                     <div id="collapseFive" class="panel-collapse collapse">
                         <div class="panel-body">  
@@ -306,7 +337,6 @@
                         <h4 class="panel-title">
                             Engine
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
                     </div>
                     <div id="collapseSix" class="panel-collapse collapse">
                         <div class="panel-body">
@@ -319,7 +349,6 @@
                         <h4 class="panel-title">
                          Brakes
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
                     </div>
                     <div id="collapseSeven" class="panel-collapse collapse">
                         <div class="panel-body">
@@ -337,7 +366,7 @@
                         <h4 class="panel-title">
                             Lighting
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
+        
                     </div>
                     <div id="collapseEight" class="panel-collapse collapse">
                         <div class="panel-body">
@@ -355,7 +384,7 @@
                         <h4 class="panel-title">
                          Interior
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
+     
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
@@ -367,7 +396,7 @@
                         <h4 class="panel-title">
                          Exterior
                         </h4>
-                <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
+       
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse">
                         <div class="panel-body">  
@@ -377,7 +406,7 @@
                                 <div class="item" id="seibon"><img src="img/Exterior/Logos/SC.png"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -441,7 +470,7 @@
 
                             <div class="row">
                                 <div class= "col-xs-12 select-color">
-                                    <h4 > Car body Color </h4>
+                                    <h4 > Car body Color </h4> <span> <label class="btn btn-customcolor">Custom</label>
 
                                     <fieldset>
           
@@ -597,7 +626,8 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab2primary">
-                            <!--  <div class="col-xs-12">
+                            
+                                 <!--  <div class="col-xs-12">
                                     <form>
                                         <input type="radio" name="option" id="radio1" checked/>
                                         <label for="radio1">
@@ -618,7 +648,6 @@
                                         </label> <br>
 
                                 </div> -->
-                            
                         </div>
                         <div class="tab-pane fade" id="tab3primary">Youtube, Product Reviews and Forums</div>
                         </div>
@@ -626,7 +655,7 @@
             </div>
         </div>
 
-        <div class="col-xs-9">
+        <div class="col-xs-12">
             <div class="carparts-card carparts-container">
                 
 
@@ -672,7 +701,7 @@
 
             <!--     <a class="arrow-left" href="#"> <img src="img/sidebar_left_arrow.png"> </a>
                  <a class="arrow-right" href="#"> <img src="img/sidebar_right_arrow.png"> </a> -->
-                <div class="col-xs-10" >
+                <div class="col-xs-12" >
                  <div class="swiper-container s2" style="margin-top: 25px;">
     <!-- Additional required wrapper -->
                             <div class="swiper-wrapper components" id="carpartz">
@@ -790,9 +819,10 @@
   $('.selectpicker').select2();
 </script>
 
- <script src="js/ajax_script.js"></script>
+ <script src="js/manufacturer_script.js"></script>
  <script src="js/sidebar-sliders.js"></script>
- <script src="js/dropdown-car.js"></script>
+  <script src="js/dropdown-car.js"></script>
+
 
 
 <script>
@@ -3260,57 +3290,4 @@ ghw;
 sg;oshg;uwg;owehg;odrnb;srdgrgasg
 ghw;ighw;ruhgrg
 nsg;owhgwhgsro;gj
-wgowuhgoerghsrogsrg
-
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsd
-
-fkshfjkshffkjsdnfjnsdkjfnsjk
-sg;oshg;uwg;owehg;odrnb;srdgrgasg
-ghw;ighw;r
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-
-
-fkshfjkshffkjsdnfjnsdkjfnsjk
-sg;oshg;uwg;owehg;odrnb;srdgrgasg
-ghw;ighw;ruhgrg
-nsg;owhgwhgsro;gj
-wgowuhgoerghsrogsrg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-
-
-fkshfjkshffkjsdnfjnsdkjfnsjk
-sg;oshg;uwg;owehg;odrnb;srdgrgasg
-ghw;ighw;ruhgrg
-nsg;owhgwhgsro;gj
-wgowuhgoerghsrogsrg
-
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfsdfsdfsgsgsfgfsgsfgsfg
-dsfs
+wgow

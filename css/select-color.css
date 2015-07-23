@@ -1,0 +1,204 @@
+
+.btn-colourselect{
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  margin: 3px;
+  display:inline-block;
+  border-radius: 2px;
+}
+
+
+.btn-colourselect.active{
+ border: 1px solid white;
+}
+
+
+
+input[type="radio"]{
+
+  display:none;
+}
+
+.btn-colourselect input:checked{
+
+  border: 1px solid white;
+}
+
+
+.btn-colourselect input, .btn-colourselect input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.btn-colourselect input:checked + .outer {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.btn-colourselect input:checked + .outer { 
+  border: 2px solid rgba(0,0,0,0.3); 
+  border-radius: 2px;
+ //  -moz-box-shadow: 0px 0px 7px #111; /* FF3.5+ */
+ // -webkit-box-shadow: 0px 0px 7px #111; /* Saf3.0+, Chrome */
+ //         box-shadow: 0px 0px 7px #111; /* Opera 10.5, IE9, Chrome 10+ */
+
+
+ }
+
+/*.radio input:focus + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgb(99, 61, 160);
+}*/
+
+.btn-colourselect .outer {
+  width: 38px;
+  height: 38px;
+  display: block;
+  
+  margin: -9px;
+  border: none;
+  border-radius: 2%;
+  background:transparent;
+}
+
+
+/*.btn-colourselect .outer:hover {
+    border: 3px solid rgba(0,0,0,0.4); 
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  
+  margin: -5px;
+  border: none;
+  border-radius: 2%;
+  background:transparent;
+}*/
+
+ .btn-colourselect .inner {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  margin: auto;
+  margin-top:1.5px;
+  border-radius: 50%;
+  background:none;
+  opacity: 0;
+}
+
+
+.red {
+    background: rgba(255, 0, 0, 0.5)
+    }
+
+.blue {
+    background: #4fa3fc
+    }
+
+.yellow {
+    background: #ECD13F
+    }
+
+.green{
+    
+ background: #43CD23   
+}
+
+.white{
+    
+ background: #fefefe;
+}
+
+
+.igrey{
+  background:#555;
+
+}
+
+.iblack {
+
+  background:#000;
+}
+
+.mavyblue{
+
+  background:navy;
+}
+
+
+.tint1 {
+  background: #4D4D4D;
+}
+
+.tint2 {
+  background: #717171;
+}
+
+.tint3 {
+  background: #949494;
+}
+
+.tint4 {
+  background: #B2B2B2;
+}
+
+.tint5 {
+  background: #2D0509;
+}
+
+.tint6{
+  background: #000037;
+}
+
+
+
+
+input[type="radio"] + i:before {
+  font-family: 'FontAwesome';
+  font-size: 13px;
+  height: 20px;
+  width: 10px;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + i{
+  position: relative;
+  -webkit-animation: icon-beat 0.1s ease;
+  animation: icon-beat 0.1s ease;
+}
+
+input[type="radio"]:checked + i + span {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+
+/*8 Select color wheel **/
+
+input[type ="radio"] + label .fa-circle {
+  display:none;
+}
+
+input[type="radio"]:checked +label .fa-circle {
+  display:block;
+  color: #fff;
+}
+
+input[type="radio"]:checked + label .fa-circle-o {
+  display: none;
+}
+
+
+

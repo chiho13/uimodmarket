@@ -36,10 +36,10 @@ $(document).ready(function(){
     swiper2.removeAllSlides();
       swiper2.appendSlide([
   
-    '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossenbrushed.png"></div>', 
-    '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossenglossgraphite.png"></div>',
-    '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossenpolished.png"></div>', 
-    '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossensatinbronze.png"></div>'
+    '<div class="swiper-slide" ><img src="img/Wheels/Vossen/vossenbrushed.png"></div>', 
+    // '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossenglossgraphite.png"></div>',
+    '<div class="swiper-slide" id="vfs2"><img src="img/Wheels/Vossen/vossenpolished.png"></div>', 
+    // '<div class="swiper-slide"><img src="img/Wheels/Vossen/vossensatinbronze.png"></div>'
     
    
 ]);
@@ -54,8 +54,8 @@ $(document).ready(function(){
      $('#cv3').live('click', function(){
       swiper2.removeAllSlides();
       swiper2.appendSlide([
-    '<div class="swiper-slide" id="cv3"><img src="img/Wheels/Vossen/cv3graphite.png"></div>', 
-    '<div class="swiper-slide"><img src="img/Wheels/Vossen/cv3silver2.png"></div>'
+    '<div class="swiper-slide" id="cv3part"><img src="img/Wheels/Vossen/cv3graphite.png"></div>', 
+    // '<div class="swiper-slide"><img src="img/Wheels/Vossen/cv3silver2.png"></div>'
   ]);
     
       // return false
@@ -301,6 +301,26 @@ $('.exterior-logos').on('click', '#seibon', function (){
         '<div class="swiper-slide auto-height"><img src="img/Exterior/seibon/cstyle.png"></div>'
 ]);
 });
+
+$("#vfs2").live('click', function(){
+      $(".tab-pane").removeClass("active");
+      $(".btn-colortab").removeClass("active");
+
+      $("#tab2primary").addClass("active in ");
+      $(".btn-part").addClass("active");
+
+      $('#tab2primary').load("Manufacturer/carparts/vfs2.html");
+    });
+
+$("#cv3part").live('click', function(){
+      $(".tab-pane").removeClass("active");
+      $(".btn-colortab").removeClass("active");
+
+      $("#tab2primary").addClass("active in ");
+      $(".btn-part").addClass("active");
+
+      $('#tab2primary').load("Manufacturer/carparts/cv3.html");
+    });
 
 });
 

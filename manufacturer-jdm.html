@@ -120,9 +120,9 @@
                 </h4>
             </div>
 
-            <div id="car-wrapper">
+             <div id="car-wrapper">
                 <fieldset>
-                    <select class="selectpicker" style="width:100%" id="first-choice">
+                    <select id="makeSelectionBox" class="selectpicker" style="width:100%" id="first-choice">
                         <option value="" disabled selected>Car Make</option>
                         <option>Mercedes</option>
                         <option>Honda</option>
@@ -130,10 +130,8 @@
                         <option>Ford</option>
                     </select>
 
-                  
-
-                    <select class="parts-option selectpicker" style=" margin-top:40px; width:100%" id="second-choice">
-                        <option value="" disabled selected>Model</option>
+                    <select id="modelSelectionBox" class="parts-option selectpicker" style=" margin-top:40px; width:100%" id="second-choice">
+                        <option value="-1" disabled selected>Model</option>
                         <!-- <option value="wheels">Wheels</option>
                         <option>Suspensions</option>
                         <option>Interior</option>
@@ -145,21 +143,42 @@
                     </select>
 
                     <div class="col-xs-9" style="padding-left:0;">
-                      <select class="selectpicker" style="width:100%" id="third-choice">
+                    <select class="selectpicker" style="width:110%" id="third-choice" >
                         <option value="" disabled selected>Year</option>
-                        <option>1980</option>
-                        <option>1981</option>
-                        <option>1982</option>
-                        <option>1983</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
                     </select>
                     </div>
-
                     <div class="col-xs-3">
                      <button role="submit" class="btn btn-render"> Go</button>
                     </div>
-
-                    
                 </fieldset>
+
+               
             </div>
         </div>
 
@@ -219,7 +238,7 @@
                  <div class=" panel panel-default">
                     <div  class=" panel-heading">
                         <h4 class="panel-title">
-                            Vossen Wheels
+                            <img src="img/Exterior/Logos/Password-JDM.png" style="height: 20px;">
                         </h4>
                 <!-- <span class="servicedrop"><i class="fa fa-chevron-down"></i></span> -->
             
@@ -236,35 +255,35 @@
                                     
                             </div> -->
 
-                            <table class="table fixed_headers shadow seriewheels">
+                            <table class="table fixed_headers shadow jdmseries">
                                 <thead class="headershadow">
         
           
-                                <th>Series</th>
+                                <th>Parts</th>
                         
                                 </thead>
                                 <tbody>
                       
                                     <tr>
                 
-                                        <td id="vf">VF</td>
+                                        <td id="exterior-jdm">Exterior</td>
                         
                                     </tr>
                                     <tr>
-                                        <td id="cv3">CV</td>
+                                        <td id="brakes-jdm">Brakes</td>
                           
                                     </tr>
                         
                                     <tr>
-                                        <td>VLE-1</td>
+                                        <td id="suspension-jdm">Suspension</td>
                         
                                     </tr>
                                     <tr>
-                                        <td>Vossen Forged</td>
+                                        <td id="lighting">Lighting</td>
                           
                                     </tr>
                                     <tr>
-                                        <td>Retired Wheels</td>
+                                        <td id="engine-jdm">Engine</td>
                       
                                     </tr>
                                 </tbody>
@@ -428,7 +447,7 @@
                 <div class=" tab-heading-title">
                         <ul class="btn-group" role="tab-panel">
                             <li class="col-xs-4  btn-colortab active" role="presentation" href="#tab1primary" data-toggle="tab">Car</li>
-                            <li class="col-xs-4  btn-colortab" role="presentation" href="#tab2primary" data-toggle="tab">Parts</li>
+                            <li class="col-xs-4  btn-colortab btn-part" role="presentation" href="#tab2primary" data-toggle="tab">Parts</li>
                              <li class="col-xs-4  btn-colortab" role="presentation" href="#tab3primary" data-toggle="tab">Social</li>
                            
                         </ul>
@@ -604,7 +623,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab2primary">Customise parts</div>
+                        <div class="tab-pane fade" id="tab2primary">
+                            
+                                  <div class="col-xs-12">
+                                    <form>
+                                        <input type="radio" name="option" id="radio1" checked/>
+                                        <label for="radio1">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-circle-o fa-stack-1x"></i>
+                                                <i class="fa fa-circle fa-stack-1x"></i>
+                                            </span>
+                                            Graphite
+                                        </label> <br>
+
+                                         <input type="radio" name="option" id="radio2"/>
+                                        <label for="radio2">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-circle-o fa-stack-1x"></i>
+                                                <i class="fa fa-circle fa-stack-1x"></i>
+                                            </span>
+                                            Silver
+                                        </label> <br>
+
+                                </div>
+                        </div>
                         <div class="tab-pane fade" id="tab3primary">Youtube, Product Reviews and Forums</div>
                         </div>
                       </div>
@@ -775,8 +817,11 @@
   $('.selectpicker').select2();
 </script>
 
+<!--Custom scripts -->
  <script src="js/manufacturer_script.js"></script>
- <script src="js/sidebar-sliders.js"></script>
+<script src="js/jdm_script.js"></script>
+ <script src="js/dropdown-car.js"></script>
+ <!-- <script src="js/sidebar-sliders.js"></script> -->
 
 
 
