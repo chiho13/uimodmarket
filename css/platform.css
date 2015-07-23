@@ -739,9 +739,9 @@ border:none;
 
 }
 
-#color-inline2::-webkit-input-placeholder { color:#fff; }
-#color-inline2::-moz-placeholder { color:#fff; } /* firefox 19+ */
-#color-inline2::-ms-input-placeholder { color:#fff; } /* ie */
+#color-inline2::-webkit-input-placeholder, #color-inline3::-webkit-input-placeholder { color:#fff; }
+#color-inline2::-moz-placeholder, #color-inline3::-moz-placeholder { color:#fff; } /* firefox 19+ */
+#color-inline2::-ms-input-placeholder, #color-inline3::-ms-input-placeholder { color:#fff; } /* ie */
 
 
 .btn-customcolor:hover {
