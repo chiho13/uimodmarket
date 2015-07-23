@@ -1,0 +1,59 @@
+
+{
+
+ "products": [
+
+    {
+
+       "name": "graphite",
+
+       "imgPath": "img/Vossen/cv3graphite.png"
+
+    },
+
+    {
+
+       "name": "silver",
+
+       "imgPath": "img/Vossen/cv3silver.png"
+
+    },
+
+    {
+
+       "name": "brushed",
+
+       "imgPath": "img/Vossen/vossenbrushed.png"
+
+    },
+
+    {
+
+       "name": "Gloss-Graphite",
+
+       "imgPath": "img/Vossen/vossenglossgraphite.png"
+
+    },
+
+       {
+
+       "name": "Polished",
+
+       "imgPath": "img/Vossen/vossenpolished.png"
+
+    },
+       {
+
+       "name": "Satin Bronze",
+
+       "imgPath": "img/Vossen/vossensatinbronze.png"
+
+    },
+
+]
+
+}
+
+
+
+
