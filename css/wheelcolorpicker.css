@@ -116,3 +116,24 @@ width: 323px !important;
 .jQWCP-wPreviewBox {
 	background: url('images/alpha.png');
 }
+
+@media(min-width:1200px) {
+
+	.jQWCP-wWidget {
+		left: 1000px !important;
+	}
+}
+@media(max-width:1200px) {
+
+	.jQWCP-wWidget {
+		left: 813px !important;
+	}
+}
+
+
+@media(max-width: 1024px){
+
+	.jQWCP-wWidget {
+		left: 680px !important;
+	}
+}
