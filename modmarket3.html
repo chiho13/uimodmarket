@@ -79,7 +79,7 @@
   </div>
 </div>
 
-
+<div class="hide-toggle" href="#"><img src="img/fullscreen.png"></div>
     <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 
@@ -108,6 +108,7 @@
     </ul>
 </nav>
 
+<div id="hide-wrapper">
 
 <!--     <div class="row"> -->
 
@@ -724,7 +725,7 @@
 
 
 
-    
+    </div>
 
 
     <!-- Header -->
@@ -759,6 +760,11 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+    });
+
+     $(".hide-toggle").click(function(e) {
+        e.preventDefault();
+        $("#hide-wrapper").fadeToggle();
     });
 
     // Scrolls to the selected menu item on the page

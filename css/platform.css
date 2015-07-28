@@ -155,6 +155,28 @@ hr.small {
     right: 0;
 }
 
+.hide-toggle {
+  padding:10px;
+  padding-top:15px;
+  padding-left: 15px;
+  cursor:pointer;
+  position: absolute;
+  top: 70px;
+  left:28%;
+  opacity: 0.8;
+   transition: all ease-in-out 0.2s;
+
+}
+
+.hide-toggle:hover {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.hidestuff {
+  display:none;
+}
+
 .a{
     color:#fff !important;
 }
