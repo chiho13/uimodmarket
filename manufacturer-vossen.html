@@ -111,7 +111,7 @@
 
 
 <!--     <div class="row"> -->
-
+<section id="hide-wrapper">
 <div class= "col-xs-3 ">
     <div class="sidebar-container">
 
@@ -415,8 +415,8 @@
 
 
         </div>
-        </div>
-   </div> <!--sidebar container -->
+    </div>
+  <!--  </div> --> <!--sidebar container -->
 
         <!-- <div class="car-spec col-xs-6 col">
         
@@ -651,7 +651,7 @@
                                         </label> <br>
 
                                 </div> -->
-                                
+
                         </div>
                         <div class="tab-pane fade" id="tab3primary">Youtube, Product Reviews and Forums</div>
                         </div>
@@ -752,8 +752,7 @@
     </div>
 </div> <!--row-->
 
-
-
+</section>
 
 
 
@@ -795,7 +794,10 @@
     });
 
     // Scrolls to the selected menu item on the page
-    
+      $(".hide-toggle").click(function(e) {
+        e.preventDefault();
+        $("#hide-wrapper").fadeToggle();
+    });
     </script>
   
 
