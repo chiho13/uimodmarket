@@ -1023,6 +1023,8 @@ footer {
 
 }
 
+/** Large desktop screen **/
+
 
 @media screen and (min-width: 1200px) {
 
@@ -1042,6 +1044,7 @@ footer {
 @media screen and (min-width: 992px ){
   .panel-group{
     width: 70%;
+    max-width: 360px;
   }
 
    .select-car-card, .search-card {
